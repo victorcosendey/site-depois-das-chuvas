@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title data-pt="Depois das Chuvas | Acervo Colaborativo JF" data-en="After the Rains | Collaborative Archive of Juiz de Fora">Depois das Chuvas | Acervo Colaborativo JF</title>
+    <meta name="description" content="Acervo colaborativo com histórias e registros das chuvas de fevereiro de 2026 em Juiz de Fora e região. Projeto da UFJF.">
+    <meta property="og:title" content="Depois das chuvas: o que a água não leva">
+    <meta property="og:description" content="Acervo colaborativo com histórias e registros das chuvas de fevereiro de 2026 em Juiz de Fora e região.">
+    <!-- Quando o site for publicado, trocar por o endereço completo da imagem (https://...) para a prévia do WhatsApp funcionar -->
+    <meta property="og:image" content="imagens/logo-depois-das-chuvas.png">
+
+    <!-- ícone da aba: embutido aqui (funciona mesmo sem a pasta imagens/); favicon.png é a cópia em arquivo -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+    <link rel="apple-touch-icon" href="imagens/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>if ("IntersectionObserver" in window) document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== MENU ===== -->
+    <nav class="menu">
+        <div class="container menu-interno">
+            <a class="menu-marca" href="#topo">
+                <img src="imagens/icone-depois-das-chuvas.png" alt="" onerror="this.remove()">
+                <span>Depois das Chuvas</span>
+            </a>
+            <ul class="menu-links">
+                <li><a href="#sobre"><span lang="pt">Sobre</span><span lang="en">About</span></a></li>
+                <li><a href="#objetivos"><span lang="pt">Objetivos</span><span lang="en">Aims</span></a></li>
+                <li><a href="#linhas"><span lang="pt">Linhas</span><span lang="en">Strands</span></a></li>
+                <li><a href="#amostras"><span lang="pt">Amostras</span><span lang="en">Samples</span></a></li>
+                <li><a href="#participe"><span lang="pt">Participe</span><span lang="en">Take part</span></a></li>
+                <li><a href="#equipe"><span lang="pt">Equipe</span><span lang="en">Team</span></a></li>
+                <li><a href="#contato"><span lang="pt">Contato</span><span lang="en">Contact</span></a></li>
+            </ul>
+            <div class="idioma" id="idioma" data-idioma="pt" role="group" aria-label="Idioma / Language">
+                <button type="button" class="idioma-lado" data-lang="pt">PT</button>
+                <button type="button" class="idioma-chave" role="switch" aria-checked="false" aria-label="Português / English">
+                    <span class="idioma-trilho"><span class="idioma-botao"></span></span>
+                </button>
+                <button type="button" class="idioma-lado" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== TOPO ===== -->
+    <header class="hero" id="topo">
+        <canvas class="chuva" id="chuva" aria-hidden="true"></canvas>
+        <div class="container hero-grade">
+            <div class="hero-texto">
+                <p class="selo"><span lang="pt">Acervo colaborativo / Em andamento</span><span lang="en">Collaborative archive / Ongoing</span></p>
+                <h1><span lang="pt">Depois das chuvas:<br>o que a água não leva</span><span lang="en">After the rains:<br>what the water does not take away</span></h1>
+                <p class="subhead"><span lang="pt">Acervo colaborativo Juiz de Fora e região</span><span lang="en">Collaborative archive of Juiz de Fora and region</span></p>
+                <p class="hero-resumo"><span lang="pt">Um acervo colaborativo com histórias e registros das chuvas que atingiram Juiz de Fora e região em fevereiro de 2026. O projeto, construído na UFJF, busca dar voz às pessoas afetadas e construir uma história democrática desse evento tão traumático.</span><span lang="en">A collaborative archive of stories and records from the rains that hit Juiz de Fora and the surrounding region in February 2026. The project, built at UFJF, seeks to give a voice to those affected and to build a democratic history of this deeply traumatic event.</span></p>
+                <div class="hero-botoes">
+                    <a class="btn" href="#participe"><span lang="pt">Participe</span><span lang="en">Take part</span></a>
+                    <a class="btn btn-2" href="#amostras"><span lang="pt">Ler relatos</span><span lang="en">Read accounts</span></a>
+                </div>
+                <p class="hero-meta"><span lang="pt">Instituto de Ciências Humanas — Universidade Federal de Juiz de Fora · Departamento de História</span><span lang="en">Institute of Human Sciences — Federal University of Juiz de Fora · Department of History</span></p>
+            </div>
+
+            <!-- Palavra decorativa, ecoando os posts do projeto: alterna MEMÓRIA, REGISTRO, TEMPORAL e RELATO -->
+            <div class="palavra" id="palavra" aria-hidden="true">
+                <div class="pw" lang="pt" data-i="0"><span>ME</span><span>MÓ</span><span>RIA</span></div>
+                <div class="pw" lang="pt" data-i="1"><span>RE</span><span>GIS</span><span>TRO</span></div>
+                <div class="pw" lang="pt" data-i="2"><span>TEM</span><span>PO</span><span>RAL</span></div>
+                <div class="pw" lang="pt" data-i="3"><span>RE</span><span>LA</span><span>TO</span></div>
+                <div class="pw" lang="en" data-i="0"><span>ME</span><span>MO</span><span>RY</span></div>
+                <div class="pw" lang="en" data-i="1"><span>REC</span><span>ORD</span></div>
+                <div class="pw" lang="en" data-i="2"><span>STO</span><span>RM</span></div>
+                <div class="pw" lang="en" data-i="3"><span>AC</span><span>COUNT</span></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== SOBRE ===== -->
+        <section id="sobre" class="secao">
+            <div class="container">
+                <h2><span lang="pt">Sobre o projeto</span><span lang="en">About the project</span></h2>
+                <div class="col texto">
+                    <p class="abre"><span lang="pt">O projeto “Depois das Chuvas: o que a água não leva - Acervo Colaborativo Juiz de Fora e Região” nasceu dentro das salas de aula da Universidade Federal de Juiz de Fora, fruto da dedicação dos alunos de História sob a orientação do Prof. Dr. Ian Kisil Marino. Somos pesquisadores em formação que acreditam que a história não é feita apenas de arquivos formais, mas também das experiências vividas e registradas pelas próprias pessoas em Juiz de Fora e região.</span><span lang="en">The project “After the Rains: What the Water Does Not Take Away – Collaborative Archive of Juiz de Fora and Region” was born in the classrooms of the Federal University of Juiz de Fora, the result of the dedication of History students under the guidance of Prof. Dr. Ian Kisil Marino. We are researchers in training who believe that history is made not only of formal archives, but also of the experiences lived and recorded by the people of Juiz de Fora and the region themselves.</span></p>
+                    <p><span lang="pt">Nosso foco é guardar e fazer ecoar as memórias das chuvas de fevereiro de 2026. Queremos entender como as pessoas viveram aquele momento, reunindo diferentes histórias individuais e coletivas para garantir que o que aconteceu não seja esquecido nem silenciado pelo tempo.</span><span lang="en">Our focus is to preserve and echo the memories of the February 2026 rains. We want to understand how people lived through that moment, bringing together different individual and collective stories so that what happened is neither forgotten nor silenced by time.</span></p>
+                    <p><span lang="pt">Esse trabalho é fundamental. Ao registrar tanto a dor das perdas quanto os problemas de infraestrutura que enfrentamos, ajudamos a preservar a identidade de quem vive aqui e criamos uma base de conhecimento que pode ajudar a evitar tragédias semelhantes no futuro.</span><span lang="en">This work is essential. By recording both the pain of the losses and the infrastructure problems we face, we help preserve the identity of those who live here and build a body of knowledge that can help prevent similar tragedies in the future.</span></p>
+                    <p><span lang="pt">Para isso, estamos ouvindo as pessoas através de entrevistas e questionários, além de reunir registros digitais e postagens que circularam em plataformas de redes sociais na época. Tudo o que for coletado passará por um tratamento técnico especializado, preparando o material para ser preservado como fontes históricas para o futuro. Como resultado, será organizado um acervo aberto para que toda a comunidade possa acessar, conhecer as nossas próprias histórias e refletir sobre os caminhos possíveis após um evento tão difícil.</span><span lang="en">To do so, we are listening to people through interviews and questionnaires, and gathering digital records and posts that circulated on social media platforms at the time. Everything collected will go through specialized technical processing, preparing the material to be preserved as historical sources for the future. As a result, an open archive will be organized so that the whole community can access it, get to know our own stories and reflect on the possible paths after such a difficult event.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OBJETIVOS E VALORES ===== -->
+        <section id="objetivos" class="secao fundo-papel">
+            <div class="container">
+                <h2><span lang="pt">Nossos objetivos e valores</span><span lang="en">Our aims and values</span></h2>
+                <ol class="objetivos col">
+                    <li><span lang="pt">Trabalhar com participação ativa de comunidades, mantendo o protagonismo das pessoas na constituição do acervo;</span><span lang="en">Work with the active participation of communities, keeping people at the center of how the archive is built;</span></li>
+                    <li><span lang="pt">Prover condições para o acolhimento de memórias individuais sensíveis de forma responsável e ética;</span><span lang="en">Provide conditions for receiving sensitive individual memories in a responsible and ethical way;</span></li>
+                    <li><span lang="pt">Desenvolver estratégias de mapeamento, coleta e sistematização arquivística de documentos digitais efêmeros produzidos em tempo real por atores diversos;</span><span lang="en">Develop strategies for mapping, collecting and archivally organizing ephemeral digital documents produced in real time by diverse actors;</span></li>
+                    <li><span lang="pt">Criar condições de organização e formalização para acervo preparado para preservação digital sistêmica por um órgão competente via doação futura;</span><span lang="en">Create the organizational and formal conditions for an archive prepared for systemic digital preservation by a competent institution through a future donation;</span></li>
+                    <li><span lang="pt">Desenvolver uma política e condições para acesso ao acervo - tanto por pesquisadores quanto para a população em geral;</span><span lang="en">Develop a policy and conditions for access to the archive, both for researchers and for the general public;</span></li>
+                    <li><span lang="pt">Construir materiais autorreflexivos acerca de memória, história, tempo e eventos sensíveis do tempo presente acerca do próprio projeto – com intuito informativo e formativo.</span><span lang="en">Build self-reflective materials about memory, history, time and sensitive events of the present, drawing on the project itself, for informative and educational purposes.</span></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===== LINHAS DE ACERVO ===== -->
+        <section id="linhas" class="secao">
+            <div class="container">
+                <h2><span lang="pt">Linhas de acervo</span><span lang="en">Collection strands</span></h2>
+                <ol class="linhas">
+                    <li>
+                        <h3><span lang="pt">História oral</span><span lang="en">Oral history</span></h3>
+                        <p><span lang="pt">entrevistas individuais</span><span lang="en">individual interviews</span></p>
+                    </li>
+                    <li>
+                        <h3><span lang="pt">Crowdsourcing</span><span lang="en">Crowdsourcing</span></h3>
+                        <p><span lang="pt">formulários para participação online</span><span lang="en">forms for online participation</span></p>
+                    </li>
+                    <li>
+                        <h3><span lang="pt">Coleta de registros</span><span lang="en">Collection of records</span></h3>
+                        <p><span lang="pt">de plataformas de redes sociais</span><span lang="en">from social media platforms</span></p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===== AMOSTRAS DO ACERVO ===== -->
+        <section id="amostras" class="amostras">
+            <div class="container">
+                <h2><span lang="pt">Amostras do acervo</span><span lang="en">Archive samples</span></h2>
+                <div class="relatos">
+
+                    <figure class="relato">
+                        <div class="relato-topo"><span><span lang="pt">Relato</span><span lang="en">Account</span></span><span>01</span></div>
+                        <blockquote><p><span lang="pt">“Eu já tinha um pouco de medo de chuva com muito barulho… Com o tempo eu fui melhorando, mas com a enchente eu acabei voltando a ter esse medo de pegar chuva forte, estando na rua ou sozinha, e acabei criando algumas questões relacionadas a medo de morte.”</span><span lang="en">“I already had a bit of a fear of rain with a lot of noise… Over time I was getting better, but with the flood I ended up fearing heavy rain again, whether out on the street or alone, and I ended up developing some issues related to fear of death.”</span></p></blockquote>
+                        <figcaption><strong><span lang="pt">Relato de Giovanna</span><span lang="en">Account from Giovanna</span></strong><span><span lang="pt">cedido em 28 de maio de 2026</span><span lang="en">contributed on May 28, 2026</span></span></figcaption>
+                    </figure>
+
+                    <figure class="relato">
+                        <div class="relato-topo"><span><span lang="pt">Relato</span><span lang="en">Account</span></span><span>02</span></div>
+                        <blockquote><p><span lang="pt">“Acredito que agora tenho mais medos de chuvas, algo que nunca tive, pois meu bairro ficou isolado por um tempo e completamente alagado. Tenho medo de sair de casa e não conseguir voltar para casa caso chova demais novamente.”</span><span lang="en">“I believe I am more afraid of rain now, something I never was, because my neighborhood was isolated for a while and completely flooded. I am afraid of leaving home and not being able to get back if it rains too much again.”</span></p></blockquote>
+                        <figcaption><strong><span lang="pt">Relato de estudante que solicitou anonimato</span><span lang="en">Account from a student who asked to remain anonymous</span></strong><span><span lang="pt">cedido em 3 de junho de 2026</span><span lang="en">contributed on June 3, 2026</span></span></figcaption>
+                    </figure>
+
+                    <figure class="relato">
+                        <div class="relato-topo"><span><span lang="pt">Relato</span><span lang="en">Account</span></span><span>03</span></div>
+                        <blockquote><p><span lang="pt">“Tivemos que nos locomover para retirar uma criança que ficou presa na casa após o desabamento (enquanto vazava gás na casa) e foi um pouco traumático o processo. Se não houvesse sido retirada ela provavelmente teria morrido”</span><span lang="en">“We had to move to get out a child who was trapped in the house after the collapse (while gas was leaking in the house) and the process was somewhat traumatic. If the child had not been pulled out, they would probably have died”</span></p></blockquote>
+                        <figcaption><strong><span lang="pt">Relato de Ruan, motoboy</span><span lang="en">Account from Ruan, motorcycle courier</span></strong><span><span lang="pt">cedido em 4 de junho de 2026</span><span lang="en">contributed on June 4, 2026</span></span></figcaption>
+                    </figure>
+
+                    <figure class="relato">
+                        <div class="relato-topo"><span><span lang="pt">Relato</span><span lang="en">Account</span></span><span>04</span></div>
+                        <blockquote><p><span lang="pt">“Durante alguns dias, fui voluntário nos serviços de limpeza de casas e ruas no Bairro Industrial e Cerâmica. Uma destruição absurda de mobílias inteiras de muitas casas pela última enchente. Mas, algo chamou a minha atenção. Foram as memórias das famílias na forma de fotografias enlameadas ou molhadas pelas águas do Rio Paraibuna que invadiram as residências.”</span><span lang="en">“For a few days, I volunteered cleaning houses and streets in the Industrial and Cerâmica neighborhoods. An absurd destruction of entire sets of furniture in many homes by the latest flood. But something caught my attention: the families’ memories, in the form of photographs covered in mud or soaked by the waters of the Paraibuna River that invaded the homes.”</span></p></blockquote>
+                        <figcaption><strong><span lang="pt">Relato de Vanderlei, professor</span><span lang="en">Account from Vanderlei, professor</span></strong><span><span lang="pt">cedido em 17 de junho de 2026</span><span lang="en">contributed on June 17, 2026</span></span></figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PARTICIPE ===== -->
+        <section id="participe" class="secao fundo-papel">
+            <div class="container">
+                <h2>Participe</h2>
+                <div class="col">
+                    <p class="chamada"><span lang="pt">O nosso acervo é colaborativo!</span><span lang="en">Our archive is collaborative!</span></p>
+                    <p class="texto-simples"><span lang="pt">Clique nos links para acessar os formulários.</span><span lang="en">Click the links to open the forms.</span></p>
+                    <div class="botoes">
+                        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe8IyFxpxKhx33nQXL0zI04B9EEqcXbMHbbxoga1HyCdbrMww/viewform" target="_blank" rel="noopener"><span lang="pt">Compartilhe relatos de experiências</span><span lang="en">Share accounts of your experience</span></a>
+                        <a class="btn btn-2" href="https://docs.google.com/forms/d/e/1FAIpQLSekHKhBW0x_tCsM1FnNvgLDE-a6h3KW_JkUBKtk1r-uLP-hIA/viewform" target="_blank" rel="noopener"><span lang="pt">Compartilhe registros (fotos e vídeos)</span><span lang="en">Share records (photos and videos)</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== COORDENAÇÃO E EQUIPE ===== -->
+        <section id="equipe" class="secao fundo-papel">
+            <div class="container">
+                <h2><span lang="pt">Coordenação e equipe</span><span lang="en">Coordination and team</span></h2>
+
+                <div class="coord">
+                    <img src="imagens/coord.jpg" alt="Foto de Ian Kisil Marino" onerror="this.remove()">
+                    <div>
+                        <p class="funcao"><span lang="pt">Coordenação</span><span lang="en">Coordination</span></p>
+                        <h3>Prof. Dr. Ian Kisil Marino</h3>
+                        <a href="http://lattes.cnpq.br/5518550355934424" target="_blank" rel="noopener"><span lang="pt">Currículo Lattes ↗</span><span lang="en">Lattes CV ↗</span></a>
+                    </div>
+                </div>
+
+                <p class="funcao funcao-lista"><span lang="pt">Equipe fundadora</span><span lang="en">Founding team</span></p>
+                <ul class="equipe">
+                    <li>Bernardo Garcia Bittar</li>
+                    <li>Brendo Henrique Bolandini Hora</li>
+                    <li>Carla Rosa Furtado Silva</li>
+                    <li>Estéphany de Paula Sandes</li>
+                    <li>Glauco Oliveira Andrade De Abreu</li>
+                    <li>Guilherme Curi Ribeiro</li>
+                    <li>João Gabriel Mayer Delgado</li>
+                    <li>Joao Paulo de Oliveira Moises</li>
+                    <li>Matheus Alves Hagler</li>
+                    <li>Otavio Kaizer de Almeida</li>
+                    <li>Vitória Nogueira Mira</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== CONTATO ===== -->
+        <section id="contato" class="secao">
+            <div class="container">
+                <h2><span lang="pt">Acompanhe e fale conosco</span><span lang="en">Follow and contact us</span></h2>
+                <dl class="contato col">
+                    <dt>E-mail</dt>
+                    <dd><a href="mailto:depoisdaschuvasjf@gmail.com">depoisdaschuvasjf@gmail.com</a></dd>
+                    <dt>Instagram</dt>
+                    <dd><a href="https://www.instagram.com/depoisdaschuvasjf" target="_blank" rel="noopener">@depoisdaschuvasjf ↗</a></dd>
+                </dl>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+        <div class="logos">
+            <div class="container logos-linha">
+                <img src="imagens/logo-depois-das-chuvas.png" alt="Depois das Chuvas: o que a água não leva — Acervo Colaborativo de Juiz de Fora e Região" onerror="this.remove()">
+                <img src="imagens/histechlab.png" alt="HisTech Lab — UFJF" onerror="this.remove()">
+                <img src="imagens/ufjf.jpg" alt="Universidade Federal de Juiz de Fora" onerror="this.remove()">
+            </div>
+        </div>
+        <div class="creditos">
+            <div class="container">
+                <p><span lang="pt">Depois das Chuvas | Acervo Colaborativo Juiz de Fora e região — Memória, história e resistência</span><span lang="en">After the Rains | Collaborative Archive of Juiz de Fora and region — Memory, history and resistance</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
