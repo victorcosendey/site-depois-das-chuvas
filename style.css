@@ -282,10 +282,12 @@ h2::before {
 .contato a:hover { background: var(--areia); }
 
 /* ============ RODAPÉ ============ */
-.logos { background: var(--papel); border-top: var(--linha); padding: 36px 0; }
+.logos { background: #fff; border-top: var(--linha); padding: 44px 0; }
 .logos-linha { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 28px 56px; }
-.logos-linha img { max-height: 70px; width: auto; }
-.logos-linha img:first-child { max-height: 96px; }
+.logos-linha img { width: auto; max-width: 100%; }
+.logos-linha img[src*="logo-depois"] { height: 84px; }
+.logos-linha img[src*="histechlab"] { height: 112px; }
+.logos-linha img[src*="ufjf"] { height: 82px; }
 .creditos {
     background: var(--chuva); color: var(--areia-clara);
     border-top: 4px solid transparent;
