@@ -18,17 +18,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script>if ("IntersectionObserver" in window) document.documentElement.classList.add("js");</script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20261120">
 </head>
 <body>
 
     <!-- ===== MENU ===== -->
     <nav class="menu">
         <div class="container menu-interno">
-            <a class="menu-marca" href="#topo">
-                <img src="imagens/icone-depois-das-chuvas.png" alt="" onerror="this.remove()">
-                <span>Depois das Chuvas</span>
-            </a>
+            <div class="menu-marca">
+                <a class="menu-icone" href="#topo" tabindex="-1" aria-hidden="true"><img src="imagens/icone-depois-das-chuvas.png" alt="" onerror="this.remove()"></a>
+                <a class="menu-projeto" href="#topo">Depois das Chuvas</a>
+            </div>
             <ul class="menu-links">
                 <li><a href="#sobre"><span lang="pt">Sobre</span><span lang="en">About</span></a></li>
                 <li><a href="#objetivos"><span lang="pt">Objetivos</span><span lang="en">Aims</span></a></li>
@@ -50,18 +50,18 @@
 
     <!-- ===== TOPO ===== -->
     <header class="hero" id="topo">
-        <!-- Selo HisTech: pendurado na faixa do topo; igual em todos os sites (o mosaico usa as 4 cores --ht-1..--ht-4 do style.css) -->
-        <a class="ht-selo" href="https://www2.ufjf.br/histechlab/" target="_blank" rel="noopener" title="HisTech Lab — Laboratório de História e Tecnologias Digitais (site institucional da UFJF)" aria-label="HisTech Lab — Laboratório de História e Tecnologias Digitais, site institucional da UFJF (abre em nova aba)">
-            <svg class="ht-mosaico" width="54" height="28" viewBox="100 -4 1330 694" aria-hidden="true"><rect class="m1" x="526" y="24" width="113" height="113" rx="0" transform="rotate(45 582 80)"/><rect class="m1" x="420" y="128" width="113" height="113" rx="0" transform="rotate(45 476 185)"/><rect class="m1" x="630" y="128" width="113" height="113" rx="0" transform="rotate(45 686 185)"/><rect class="m3" x="880" y="146" width="113" height="113" rx="0" transform="rotate(45 937 203)"/><rect class="m3" x="774" y="252" width="113" height="113" rx="0" transform="rotate(45 831 308)"/><rect class="m3" x="986" y="252" width="113" height="113" rx="0" transform="rotate(45 1043 308)"/><rect class="m1 f" x="314" y="234" width="113" height="113" rx="22" transform="rotate(45 371 291)"/><rect class="m1 f" x="524" y="234" width="113" height="113" rx="22" transform="rotate(45 581 291)"/><rect class="m1 f" x="420" y="340" width="113" height="113" rx="22" transform="rotate(45 476 396)"/><rect class="m3 f" x="672" y="356" width="113" height="113" rx="22" transform="rotate(45 728 413)"/><rect class="m3 f" x="880" y="356" width="113" height="113" rx="22" transform="rotate(45 937 413)"/><rect class="m3 f" x="1090" y="356" width="113" height="113" rx="22" transform="rotate(45 1147 413)"/><circle class="m2" cx="266" cy="395" r="57"/><circle class="m2" cx="163" cy="500" r="57"/><circle class="m2" cx="371" cy="500" r="57"/><circle class="m4 f" cx="620" cy="519" r="57"/><circle class="m4 f" cx="831" cy="519" r="57"/><circle class="m4 f" cx="1040" cy="519" r="57"/><circle class="m4 f" cx="1256" cy="519" r="57"/><circle class="m4" cx="517" cy="624" r="57"/><circle class="m4" cx="728" cy="624" r="57"/><circle class="m4" cx="938" cy="624" r="57"/><circle class="m4" cx="1147" cy="624" r="57"/><circle class="m4" cx="1363" cy="624" r="57"/></svg>
+        <!-- Selo HisTech: igual em todos os sites (o mosaico usa as cores --ht-1..--ht-4 do style.css) -->
+        <a class="ht-selo" href="https://www2.ufjf.br/histechlab/" target="_blank" rel="noopener" title="HisTech Lab — Laboratório de História e Tecnologias Digitais (site institucional da UFJF)" aria-label="HisTech Lab — site institucional da UFJF">
+            <svg class="ht-mosaico" width="56" height="29" viewBox="100 -4 1330 694" aria-hidden="true"><rect class="m1" x="526" y="24" width="113" height="113" rx="0" transform="rotate(45 582 80)"/><rect class="m1" x="420" y="128" width="113" height="113" rx="0" transform="rotate(45 476 185)"/><rect class="m1" x="630" y="128" width="113" height="113" rx="0" transform="rotate(45 686 185)"/><rect class="m3" x="880" y="146" width="113" height="113" rx="0" transform="rotate(45 937 203)"/><rect class="m3" x="774" y="252" width="113" height="113" rx="0" transform="rotate(45 831 308)"/><rect class="m3" x="986" y="252" width="113" height="113" rx="0" transform="rotate(45 1043 308)"/><rect class="m1 f" x="314" y="234" width="113" height="113" rx="22" transform="rotate(45 371 291)"/><rect class="m1 f" x="524" y="234" width="113" height="113" rx="22" transform="rotate(45 581 291)"/><rect class="m1 f" x="420" y="340" width="113" height="113" rx="22" transform="rotate(45 476 396)"/><rect class="m3 f" x="672" y="356" width="113" height="113" rx="22" transform="rotate(45 728 413)"/><rect class="m3 f" x="880" y="356" width="113" height="113" rx="22" transform="rotate(45 937 413)"/><rect class="m3 f" x="1090" y="356" width="113" height="113" rx="22" transform="rotate(45 1147 413)"/><circle class="m2" cx="266" cy="395" r="57"/><circle class="m2" cx="163" cy="500" r="57"/><circle class="m2" cx="371" cy="500" r="57"/><circle class="m4 f" cx="620" cy="519" r="57"/><circle class="m4 f" cx="831" cy="519" r="57"/><circle class="m4 f" cx="1040" cy="519" r="57"/><circle class="m4 f" cx="1256" cy="519" r="57"/><circle class="m4" cx="517" cy="624" r="57"/><circle class="m4" cx="728" cy="624" r="57"/><circle class="m4" cx="938" cy="624" r="57"/><circle class="m4" cx="1147" cy="624" r="57"/><circle class="m4" cx="1363" cy="624" r="57"/></svg>
             <span class="ht-nome"><b>His</b>Tech</span><span class="ht-lab">Lab</span>
         </a>
         <canvas class="chuva" id="chuva" aria-hidden="true"></canvas>
         <div class="container hero-grade">
             <div class="hero-texto">
-                <p class="selo"><span lang="pt">Acervo colaborativo / Em andamento</span><span lang="en">Collaborative archive / Ongoing</span></p>
-                <h1><span lang="pt">Depois das chuvas:<br>o que a água não leva</span><span lang="en">After the rains:<br>what the water does not take away</span></h1>
+                <p class="selo"><span lang="pt">Acervo colaborativo / Em andamento</span><span lang="en">Collaborative archive / In progress</span></p>
+                <h1><span lang="pt">Depois das chuvas:<br>o que a água não leva</span><span lang="en">After the rains:<br>what the water doesn’t wash away</span></h1>
                 <p class="subhead"><span lang="pt">Acervo colaborativo Juiz de Fora e região</span><span lang="en">Collaborative archive of Juiz de Fora and region</span></p>
-                <p class="hero-resumo"><span lang="pt">Um acervo colaborativo com histórias e registros das chuvas que atingiram Juiz de Fora e região em fevereiro de 2026. O projeto, construído na UFJF, busca dar voz às pessoas afetadas e construir uma história democrática desse evento tão traumático.</span><span lang="en">A collaborative archive of stories and records from the rains that hit Juiz de Fora and the surrounding region in February 2026. The project, built at UFJF, seeks to give a voice to those affected and to build a democratic history of this deeply traumatic event.</span></p>
+                <p class="hero-resumo"><span lang="pt">Um acervo colaborativo com histórias e registros das chuvas que atingiram Juiz de Fora e região em fevereiro de 2026. O projeto, construído na UFJF, busca dar voz às pessoas afetadas e construir uma história democrática desse evento tão traumático.</span><span lang="en">A collaborative archive of stories and records from the rains that hit Juiz de Fora and the surrounding region in February 2026. The project, built at UFJF, seeks to give voice to those affected and to build a democratic history of this deeply traumatic event.</span></p>
                 <div class="hero-botoes">
                     <a class="btn" href="#participe"><span lang="pt">Participe</span><span lang="en">Take part</span></a>
                     <a class="btn btn-2" href="#amostras"><span lang="pt">Ler relatos</span><span lang="en">Read accounts</span></a>
@@ -90,8 +90,8 @@
             <div class="container">
                 <h2><span lang="pt">Sobre o projeto</span><span lang="en">About the project</span></h2>
                 <div class="col texto">
-                    <p class="abre"><span lang="pt">O projeto “Depois das Chuvas: o que a água não leva - Acervo Colaborativo Juiz de Fora e Região” nasceu dentro das salas de aula da Universidade Federal de Juiz de Fora, fruto da dedicação dos alunos de História sob a orientação do Prof. Dr. Ian Kisil Marino. Somos pesquisadores em formação que acreditam que a história não é feita apenas de arquivos formais, mas também das experiências vividas e registradas pelas próprias pessoas em Juiz de Fora e região.</span><span lang="en">The project “After the Rains: What the Water Does Not Take Away – Collaborative Archive of Juiz de Fora and Region” was born in the classrooms of the Federal University of Juiz de Fora, the result of the dedication of History students under the guidance of Prof. Dr. Ian Kisil Marino. We are researchers in training who believe that history is made not only of formal archives, but also of the experiences lived and recorded by the people of Juiz de Fora and the region themselves.</span></p>
-                    <p><span lang="pt">Nosso foco é guardar e fazer ecoar as memórias das chuvas de fevereiro de 2026. Queremos entender como as pessoas viveram aquele momento, reunindo diferentes histórias individuais e coletivas para garantir que o que aconteceu não seja esquecido nem silenciado pelo tempo.</span><span lang="en">Our focus is to preserve and echo the memories of the February 2026 rains. We want to understand how people lived through that moment, bringing together different individual and collective stories so that what happened is neither forgotten nor silenced by time.</span></p>
+                    <p class="abre"><span lang="pt">O projeto “Depois das Chuvas: o que a água não leva - Acervo Colaborativo Juiz de Fora e Região” nasceu dentro das salas de aula da Universidade Federal de Juiz de Fora, fruto da dedicação dos alunos de História sob a orientação do Prof. Dr. Ian Kisil Marino. Somos pesquisadores em formação que acreditam que a história não é feita apenas de arquivos formais, mas também das experiências vividas e registradas pelas próprias pessoas em Juiz de Fora e região.</span><span lang="en">The project “After the Rains: What the Water Doesn’t Wash Away – Collaborative Archive of Juiz de Fora and Region” was born in the classrooms of the Federal University of Juiz de Fora, the result of the dedication of History students under the guidance of Prof. Dr. Ian Kisil Marino. We are researchers in training who believe that history is made not only of formal archives, but also of the experiences lived and recorded by the people of Juiz de Fora and the region themselves.</span></p>
+                    <p><span lang="pt">Nosso foco é guardar e fazer ecoar as memórias das chuvas de fevereiro de 2026. Queremos entender como as pessoas viveram aquele momento, reunindo diferentes histórias individuais e coletivas para garantir que o que aconteceu não seja esquecido nem silenciado pelo tempo.</span><span lang="en">Our focus is to safeguard and echo the memories of the February 2026 rains. We want to understand how people lived through that moment, bringing together different individual and collective stories so that what happened is neither forgotten nor silenced by time.</span></p>
                     <p><span lang="pt">Esse trabalho é fundamental. Ao registrar tanto a dor das perdas quanto os problemas de infraestrutura que enfrentamos, ajudamos a preservar a identidade de quem vive aqui e criamos uma base de conhecimento que pode ajudar a evitar tragédias semelhantes no futuro.</span><span lang="en">This work is essential. By recording both the pain of the losses and the infrastructure problems we face, we help preserve the identity of those who live here and build a body of knowledge that can help prevent similar tragedies in the future.</span></p>
                     <p><span lang="pt">Para isso, estamos ouvindo as pessoas através de entrevistas e questionários, além de reunir registros digitais e postagens que circularam em plataformas de redes sociais na época. Tudo o que for coletado passará por um tratamento técnico especializado, preparando o material para ser preservado como fontes históricas para o futuro. Como resultado, será organizado um acervo aberto para que toda a comunidade possa acessar, conhecer as nossas próprias histórias e refletir sobre os caminhos possíveis após um evento tão difícil.</span><span lang="en">To do so, we are listening to people through interviews and questionnaires, and gathering digital records and posts that circulated on social media platforms at the time. Everything collected will go through specialized technical processing, preparing the material to be preserved as historical sources for the future. As a result, an open archive will be organized so that the whole community can access it, get to know our own stories and reflect on the possible paths after such a difficult event.</span></p>
                 </div>
@@ -104,9 +104,9 @@
                 <h2><span lang="pt">Nossos objetivos e valores</span><span lang="en">Our aims and values</span></h2>
                 <ol class="objetivos col">
                     <li><span lang="pt">Trabalhar com participação ativa de comunidades, mantendo o protagonismo das pessoas na constituição do acervo;</span><span lang="en">Work with the active participation of communities, keeping people at the center of how the archive is built;</span></li>
-                    <li><span lang="pt">Prover condições para o acolhimento de memórias individuais sensíveis de forma responsável e ética;</span><span lang="en">Provide conditions for receiving sensitive individual memories in a responsible and ethical way;</span></li>
-                    <li><span lang="pt">Desenvolver estratégias de mapeamento, coleta e sistematização arquivística de documentos digitais efêmeros produzidos em tempo real por atores diversos;</span><span lang="en">Develop strategies for mapping, collecting and archivally organizing ephemeral digital documents produced in real time by diverse actors;</span></li>
-                    <li><span lang="pt">Criar condições de organização e formalização para acervo preparado para preservação digital sistêmica por um órgão competente via doação futura;</span><span lang="en">Create the organizational and formal conditions for an archive prepared for systemic digital preservation by a competent institution through a future donation;</span></li>
+                    <li><span lang="pt">Prover condições para o acolhimento de memórias individuais sensíveis de forma responsável e ética;</span><span lang="en">Create the conditions to welcome sensitive individual memories in a responsible and ethical way;</span></li>
+                    <li><span lang="pt">Desenvolver estratégias de mapeamento, coleta e sistematização arquivística de documentos digitais efêmeros produzidos em tempo real por atores diversos;</span><span lang="en">Develop strategies for mapping, collecting and archival systematization of ephemeral digital documents produced in real time by diverse actors;</span></li>
+                    <li><span lang="pt">Criar condições de organização e formalização para acervo preparado para preservação digital sistêmica por um órgão competente via doação futura;</span><span lang="en">Create the organizational and formal conditions for an archive prepared for systemic digital preservation by an appropriate institution through a future donation;</span></li>
                     <li><span lang="pt">Desenvolver uma política e condições para acesso ao acervo - tanto por pesquisadores quanto para a população em geral;</span><span lang="en">Develop a policy and conditions for access to the archive, both for researchers and for the general public;</span></li>
                     <li><span lang="pt">Construir materiais autorreflexivos acerca de memória, história, tempo e eventos sensíveis do tempo presente acerca do próprio projeto – com intuito informativo e formativo.</span><span lang="en">Build self-reflective materials about memory, history, time and sensitive events of the present, drawing on the project itself, for informative and educational purposes.</span></li>
                 </ol>
@@ -142,25 +142,25 @@
 
                     <figure class="relato">
                         <div class="relato-topo"><span><span lang="pt">Relato</span><span lang="en">Account</span></span><span>01</span></div>
-                        <blockquote><p><span lang="pt">“Eu já tinha um pouco de medo de chuva com muito barulho… Com o tempo eu fui melhorando, mas com a enchente eu acabei voltando a ter esse medo de pegar chuva forte, estando na rua ou sozinha, e acabei criando algumas questões relacionadas a medo de morte.”</span><span lang="en">“I already had a bit of a fear of rain with a lot of noise… Over time I was getting better, but with the flood I ended up fearing heavy rain again, whether out on the street or alone, and I ended up developing some issues related to fear of death.”</span></p></blockquote>
+                        <blockquote><p><span lang="pt">“Eu já tinha um pouco de medo de chuva com muito barulho… Com o tempo eu fui melhorando, mas com a enchente eu acabei voltando a ter esse medo de pegar chuva forte, estando na rua ou sozinha, e acabei criando algumas questões relacionadas a medo de morte.”</span><span lang="en">“I was already a bit afraid of loud rain… Over time I got better, but with the flood I ended up fearing heavy rain again, whether out on the street or alone, and I developed some concerns related to the fear of death.”</span></p></blockquote>
                         <figcaption><strong><span lang="pt">Relato de Giovanna</span><span lang="en">Account from Giovanna</span></strong><span><span lang="pt">cedido em 28 de maio de 2026</span><span lang="en">contributed on May 28, 2026</span></span></figcaption>
                     </figure>
 
                     <figure class="relato">
                         <div class="relato-topo"><span><span lang="pt">Relato</span><span lang="en">Account</span></span><span>02</span></div>
-                        <blockquote><p><span lang="pt">“Acredito que agora tenho mais medos de chuvas, algo que nunca tive, pois meu bairro ficou isolado por um tempo e completamente alagado. Tenho medo de sair de casa e não conseguir voltar para casa caso chova demais novamente.”</span><span lang="en">“I believe I am more afraid of rain now, something I never was, because my neighborhood was isolated for a while and completely flooded. I am afraid of leaving home and not being able to get back if it rains too much again.”</span></p></blockquote>
+                        <blockquote><p><span lang="pt">“Acredito que agora tenho mais medos de chuvas, algo que nunca tive, pois meu bairro ficou isolado por um tempo e completamente alagado. Tenho medo de sair de casa e não conseguir voltar para casa caso chova demais novamente.”</span><span lang="en">“I think I am more afraid of rain now, which I never was before, because my neighborhood was isolated for a while and completely flooded. I am afraid of leaving home and not being able to get back home if it rains too much again.”</span></p></blockquote>
                         <figcaption><strong><span lang="pt">Relato de estudante que solicitou anonimato</span><span lang="en">Account from a student who asked to remain anonymous</span></strong><span><span lang="pt">cedido em 3 de junho de 2026</span><span lang="en">contributed on June 3, 2026</span></span></figcaption>
                     </figure>
 
                     <figure class="relato">
                         <div class="relato-topo"><span><span lang="pt">Relato</span><span lang="en">Account</span></span><span>03</span></div>
-                        <blockquote><p><span lang="pt">“Tivemos que nos locomover para retirar uma criança que ficou presa na casa após o desabamento (enquanto vazava gás na casa) e foi um pouco traumático o processo. Se não houvesse sido retirada ela provavelmente teria morrido”</span><span lang="en">“We had to move to get out a child who was trapped in the house after the collapse (while gas was leaking in the house) and the process was somewhat traumatic. If the child had not been pulled out, they would probably have died”</span></p></blockquote>
+                        <blockquote><p><span lang="pt">“Tivemos que nos locomover para retirar uma criança que ficou presa na casa após o desabamento (enquanto vazava gás na casa) e foi um pouco traumático o processo. Se não houvesse sido retirada ela provavelmente teria morrido”</span><span lang="en">“We had to act fast to get a child out who was trapped in the house after the collapse (while gas was leaking inside), and the whole process was somewhat traumatic. If the child had not been pulled out, they would probably have died”</span></p></blockquote>
                         <figcaption><strong><span lang="pt">Relato de Ruan, motoboy</span><span lang="en">Account from Ruan, motorcycle courier</span></strong><span><span lang="pt">cedido em 4 de junho de 2026</span><span lang="en">contributed on June 4, 2026</span></span></figcaption>
                     </figure>
 
                     <figure class="relato">
                         <div class="relato-topo"><span><span lang="pt">Relato</span><span lang="en">Account</span></span><span>04</span></div>
-                        <blockquote><p><span lang="pt">“Durante alguns dias, fui voluntário nos serviços de limpeza de casas e ruas no Bairro Industrial e Cerâmica. Uma destruição absurda de mobílias inteiras de muitas casas pela última enchente. Mas, algo chamou a minha atenção. Foram as memórias das famílias na forma de fotografias enlameadas ou molhadas pelas águas do Rio Paraibuna que invadiram as residências.”</span><span lang="en">“For a few days, I volunteered cleaning houses and streets in the Industrial and Cerâmica neighborhoods. An absurd destruction of entire sets of furniture in many homes by the latest flood. But something caught my attention: the families’ memories, in the form of photographs covered in mud or soaked by the waters of the Paraibuna River that invaded the homes.”</span></p></blockquote>
+                        <blockquote><p><span lang="pt">“Durante alguns dias, fui voluntário nos serviços de limpeza de casas e ruas no Bairro Industrial e Cerâmica. Uma destruição absurda de mobílias inteiras de muitas casas pela última enchente. Mas, algo chamou a minha atenção. Foram as memórias das famílias na forma de fotografias enlameadas ou molhadas pelas águas do Rio Paraibuna que invadiram as residências.”</span><span lang="en">“For a few days, I volunteered cleaning houses and streets in the Industrial and Cerâmica neighborhoods. Absurd destruction: entire sets of furniture in many homes ruined by the latest flood. But something caught my attention: the families’ memories, in the form of photographs covered in mud or soaked by the waters of the Paraibuna River that invaded the homes.”</span></p></blockquote>
                         <figcaption><strong><span lang="pt">Relato de Vanderlei, professor</span><span lang="en">Account from Vanderlei, professor</span></strong><span><span lang="pt">cedido em 17 de junho de 2026</span><span lang="en">contributed on June 17, 2026</span></span></figcaption>
                     </figure>
 
@@ -176,7 +176,7 @@
                     <p class="chamada"><span lang="pt">O nosso acervo é colaborativo!</span><span lang="en">Our archive is collaborative!</span></p>
                     <p class="texto-simples"><span lang="pt">Clique nos links para acessar os formulários.</span><span lang="en">Click the links to open the forms.</span></p>
                     <div class="botoes">
-                        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe8IyFxpxKhx33nQXL0zI04B9EEqcXbMHbbxoga1HyCdbrMww/viewform" target="_blank" rel="noopener"><span lang="pt">Compartilhe relatos de experiências</span><span lang="en">Share accounts of your experience</span></a>
+                        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe8IyFxpxKhx33nQXL0zI04B9EEqcXbMHbbxoga1HyCdbrMww/viewform" target="_blank" rel="noopener"><span lang="pt">Compartilhe relatos de experiências</span><span lang="en">Share accounts of your experiences</span></a>
                         <a class="btn btn-2" href="https://docs.google.com/forms/d/e/1FAIpQLSekHKhBW0x_tCsM1FnNvgLDE-a6h3KW_JkUBKtk1r-uLP-hIA/viewform" target="_blank" rel="noopener"><span lang="pt">Compartilhe registros (fotos e vídeos)</span><span lang="en">Share records (photos and videos)</span></a>
                     </div>
                 </div>
@@ -203,12 +203,12 @@
                     <li>Brendo Henrique Bolandini Hora</li>
                     <li>Carla Rosa Furtado Silva</li>
                     <li>Estéphany de Paula Sandes</li>
-                    <li>Glauco Oliveira Andrade De Abreu</li>
+                    <li>Glauco Oliveira Andrade de Abreu</li>
                     <li>Guilherme Curi Ribeiro</li>
                     <li>João Gabriel Mayer Delgado</li>
-                    <li>Joao Paulo de Oliveira Moises</li>
+                    <li>João Paulo de Oliveira Moisés</li>
                     <li>Matheus Alves Hagler</li>
-                    <li>Otavio Kaizer de Almeida</li>
+                    <li>Otávio Kaizer de Almeida</li>
                     <li>Vitória Nogueira Mira</li>
                 </ul>
             </div>
@@ -244,6 +244,6 @@
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js?v=20261120" defer></script>
 </body>
 </html>
