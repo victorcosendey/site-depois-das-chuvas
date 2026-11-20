@@ -23,19 +23,33 @@
         b.addEventListener('click', function () { definir(b.getAttribute('data-lang')); });
     });
 
-    // Palavra do topo: troca a cada ~2 s (sem animação se o visitante pediu menos movimento)
+    // Palavra do topo: a cada ~2,8 s a palavra atual é "levada pela chuva" (sai escorrendo para baixo e
+    // para a esquerda, como a chuva do fundo) e a próxima sobe no lugar. Sem animação se o visitante pediu menos movimento.
     var pal = document.getElementById('palavra');
     var atual = 0;
+    var lingua = function () { return html.getAttribute('data-lang') === 'en' ? 'en' : 'pt'; };
     function mostrarPalavra() {
-        var lg = html.getAttribute('data-lang') === 'en' ? 'en' : 'pt';
+        var lg = lingua();
         pal.querySelectorAll('.pw').forEach(function (w) {
+            w.classList.remove('sai');
             w.classList.toggle('on', w.getAttribute('lang') === lg && +w.getAttribute('data-i') === atual);
         });
     }
+    function trocarPalavra() {
+        var saindo = pal.querySelector('.pw.on');
+        pal.classList.add('troca');
+        if (saindo) { saindo.classList.add('sai'); }
+        setTimeout(function () {
+            atual = (atual + 1) % 4;
+            mostrarPalavra();
+        }, 520);
+        setTimeout(function () { pal.classList.remove('troca'); }, 700);
+    }
     mostrarPalavra();
+    // ao trocar de idioma, mostra direto a palavra do novo idioma, sem a saída
     new MutationObserver(mostrarPalavra).observe(html, { attributes: true, attributeFilter: ['data-lang'] });
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        setInterval(function () { atual = (atual + 1) % 4; mostrarPalavra(); }, 2000);
+        setInterval(trocarPalavra, 2800);
     }
 
     /* --- Chuva no topo: riscos finos caindo na diagonal; pausa fora da tela e respeita "reduzir movimento" --- */
